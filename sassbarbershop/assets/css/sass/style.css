@@ -108,10 +108,12 @@ p {
 .navigation {
   background-color: #121619;
   color: #FFFFFF;
+  min-height: 80px;
 }
 .navigation a:hover {
   color: #D76C69;
-  font-size: 14px;
+  font-size: 19px;
+  text-decoration: none;
 }
 .navigation a {
   color: #FFFFFF;
@@ -120,6 +122,11 @@ p {
 .navigation .navbar-brand {
   color: #FFFFFF;
 }
+@media (min-width: 700px) {
+  .navigation {
+    min-height: 70px;
+  }
+}
 .navigation img {
   max-height: 30px;
 }
@@ -127,8 +134,15 @@ p {
   color: #FFFFFF;
 }
 .navigation .navigation__link {
-  font-size: 14px;
+  font-size: 16px;
   padding-left: 10px;
+  text-align: center;
+  float: right;
+}
+@media (min-width: 990px) {
+  .navigation .navigation__link {
+    font-size: 18px;
+  }
 }
 
 .header {
